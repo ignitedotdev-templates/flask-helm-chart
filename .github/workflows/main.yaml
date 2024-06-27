@@ -30,7 +30,7 @@ jobs:
         id: check-helm-repo
         run: |
           mkdir -p ~/.kube
-          echo "${{ secrets.STAGING_INTERNAL_KUBECONFIG }}" > ~/.kube/config
+          echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
           export KUBECONFIG=~/.kube/config
         continue-on-error: true
 
