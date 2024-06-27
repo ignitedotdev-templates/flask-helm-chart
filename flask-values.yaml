@@ -1,0 +1,16 @@
+appName: flask
+
+containerPort: 5000
+
+namespace: default
+tier: flask
+
+serviceName: flask-service
+containerName: flask-container
+targetPort: 5000
+servicePort: 5000
+registrySecret: harbor-registry-secret
+
+image:
+  name: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker
+  tag: 9497540256-4
