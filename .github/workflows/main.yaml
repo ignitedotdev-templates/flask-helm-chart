@@ -43,7 +43,7 @@ jobs:
         run: |
           release_name="flask"
           helm repo update
-          helm install $release_name chartmuseum/flask -f flask.yaml
+          helm install $release_name chartmuseum/flask -f flask-values.yaml
             
           
       - name: Print Current Working Directory
